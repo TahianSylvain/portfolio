@@ -1,4 +1,5 @@
 <!DOCTYPE html>
+{% load static %}
 <html lang="en">
 
   <head>
@@ -11,22 +12,16 @@
     <title>Tale SEO Agency - About Page</title>
 
     <!-- Bootstrap core CSS -->
-    <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <link href="{% static './vendor/bootstrap/css/bootstrap.min.css' %}" rel="stylesheet">
 
 
     <!-- Additional CSS Files -->
-    <link rel="stylesheet" href="assets/css/fontawesome.css">
-    <link rel="stylesheet" href="assets/css/templatemo-tale-seo-agency.css">
-    <link rel="stylesheet" href="assets/css/owl.css">
-    <link rel="stylesheet" href="assets/css/animate.css">
+    <link rel="stylesheet" href="{% static './assets/css/fontawesome.css' %}">
+    <link rel="stylesheet" href="{% static './assets/css/templatemo-tale-seo-agency.css' %}">
+    <link rel="stylesheet" href="{% static './assets/css/owl.css' %}">
+    <link rel="stylesheet" href="{% static './assets/css/animate.css' %}">
     <link rel="stylesheet"href="https://unpkg.com/swiper@7/swiper-bundle.min.css"/>
-<!--
 
-TemplateMo 582 Tale SEO Agency
-
-https://templatemo.com/tm-582-tale-seo-agency
-
--->
   </head>
 
 <body>
@@ -80,7 +75,7 @@ https://templatemo.com/tm-582-tale-seo-agency
                 <nav class="main-nav">
                     <!-- ***** Logo Start ***** -->
                     <a href="index.html" class="logo">
-                        <img src="assets/images/logo.png" alt="" style="max-width: 112px;">
+                        <img src="{% static './assets/images/logo.png' %}" alt="" style="max-width: 112px;">
                     </a>
                     <!-- ***** Logo End ***** -->
                     <!-- ***** Menu Start ***** -->
@@ -124,7 +119,7 @@ https://templatemo.com/tm-582-tale-seo-agency
           </div>
         </div>
         <div class="col-lg-5 align-self-center">
-          <img src="assets/images/about-us-image.jpg" alt="">
+          <img src="{% static './assets/images/about-us-image.jpg' %}" alt="">
         </div>
       </div>
     </div>
@@ -135,7 +130,7 @@ https://templatemo.com/tm-582-tale-seo-agency
       <div class="row">
         <div class="col-lg-6">
           <div class="video-thumb">
-            <img src="assets/images/video-thumb.jpg" alt="">
+            <img src="{% static './assets/images/video-thumb.jpg' %}" alt="">
             <a href="http://youtube.com" target="_blank"><i class="fa fa-play"></i></a>
           </div>
         </div>
@@ -207,7 +202,7 @@ https://templatemo.com/tm-582-tale-seo-agency
                             <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed doers eiusmod tempor incididunt ut labore et dolore dolor dolor sit amet, consectetur adipicing elit, sed doers eiusmod.</p>
                           </div>
                           <div class="col-lg-5 align-self-center">
-                            <img src="assets/images/happyclient-01.jpg" alt="">
+                            <img src="{% static './assets/images/happyclient-01.jpg' %}" alt="">
                           </div>
                         </div>
                       </div>
@@ -228,7 +223,7 @@ https://templatemo.com/tm-582-tale-seo-agency
                             <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed doers eiusmod tempor incididunt ut labore et dolore dolor dolor sit amet, consectetur adipicing elit, sed doers eiusmod.</p>
                           </div>
                           <div class="col-lg-5 align-self-center">
-                            <img src="assets/images/happyclient-01.jpg" alt="">
+                            <img src="{% static './assets/images/happyclient-01.jpg' %}" alt="">
                           </div>
                         </div>
                       </div>
@@ -249,7 +244,7 @@ https://templatemo.com/tm-582-tale-seo-agency
                             <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed doers eiusmod tempor incididunt ut labore et dolore dolor dolor sit amet, consectetur adipicing elit, sed doers eiusmod.</p>
                           </div>
                           <div class="col-lg-5 align-self-center">
-                            <img src="assets/images/happyclient-01.jpg" alt="">
+                            <img src="{% static './assets/images/happyclient-01.jpg' %}" alt="">
                           </div>
                         </div>
                       </div>
@@ -270,7 +265,7 @@ https://templatemo.com/tm-582-tale-seo-agency
                             <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed doers eiusmod tempor incididunt ut labore et dolore dolor dolor sit amet, consectetur adipicing elit, sed doers eiusmod.</p>
                           </div>
                           <div class="col-lg-5 align-self-center">
-                            <img src="assets/images/happyclient-01.jpg" alt="">
+                            <img src="{% static './assets/images/happyclient-01.jpg' %}" alt="">
                           </div>
                         </div>
                       </div>
@@ -313,14 +308,14 @@ https://templatemo.com/tm-582-tale-seo-agency
 
   <!-- Scripts -->
   <!-- Bootstrap core JavaScript -->
-  <script src="vendor/jquery/jquery.min.js"></script>
-  <script src="vendor/bootstrap/js/bootstrap.min.js"></script>
+  <script src="{% static './vendor/jquery/jquery.min.js' %}"></script>
+  <script src="{% static './vendor/bootstrap/js/bootstrap.min.js' %}"></script>
+  <script src="{% static './assets/js/isotope.min.js' %}"></script>
+  <script src="{% static './assets/js/owl-carousel.js' %}"></script>
+  <script src="{% static './assets/js/tabs.js' %}"></script>
+  <script src="{% static './assets/js/popup.js' %}"></script>
+  <script src="{% static './assets/js/custom.js' %}"></script>
 
-  <script src="assets/js/isotope.min.js"></script>
-  <script src="assets/js/owl-carousel.js"></script>
-  <script src="assets/js/tabs.js"></script>
-  <script src="assets/js/popup.js"></script>
-  <script src="assets/js/custom.js"></script>
 
   </body>
 </html>
