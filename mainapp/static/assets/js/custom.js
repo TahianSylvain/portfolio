@@ -4,7 +4,7 @@
 
 	// Page loading animation
 	$(window).on('load', function() {
-
+		console.log('loading')
         $('#js-preloader').addClass('loaded');
 
     });
@@ -19,7 +19,11 @@
                 mobile:       true,       // Trigger animations on mobile devices (default is true)
                 live:         true,       // Act on asynchronously loaded content (default is true)
             });
-            wow.init();
+			setInterval(() => {
+				wow.init();
+				console.log('Started');
+			}, 1500);
+		// wow.stop();
         }
     });
 
