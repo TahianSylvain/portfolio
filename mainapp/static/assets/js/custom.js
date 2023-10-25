@@ -5,7 +5,13 @@
 	// Page loading animation
 	$(window).on('load', function() {
 		console.log('loading')
-        $('#js-preloader').addClass('loaded');
+		setTimeout(function () {
+			$('#js-preloader').addClass('loaded');
+			
+			// Stop the animation of .dots span
+            $('.dot').css('animation', 'none');
+            $('.dots').css('animation', 'none');
+		}, 3000)
 
     });
 
@@ -19,12 +25,8 @@
                 mobile:       true,       // Trigger animations on mobile devices (default is true)
                 live:         true,       // Act on asynchronously loaded content (default is true)
             });
-			setInterval(() => {
-				wow.init();
-				console.log('Started');
-			}, 1500);
-		// wow.stop();
-        }
+		wow.init();
+		}
     });
 
 	$(window).scroll(function() {
