@@ -1,5 +1,10 @@
 .main-banner{
     padding-bottom: 0px;
+    padding-top: 125px;
+}
+
+.main-banner p{
+    padding-right: 0px;
 }
 
 .section{
@@ -8,5 +13,23 @@
 }
 
 #imagine{
-    width: 60px;
+    width: 1030px;
+    overflow: hidden;
+    margin-right: 20px; /* Adjust the margin to control the distance between the image and text */
+    margin-bottom: 30px;
+    border-radius: 50%;
 }
+
+#ratingInput{
+    display: none;
+}
+
+.cellular{
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+}
+
+.checked {
+    color: rgb(116, 1, 169); 
+  }

@@ -1,4 +1,7 @@
 from django.shortcuts import render
+from .models import Surf
+from django.contrib.auth.models import User
+
 
 def landing(request):
     """from django.shortcuts import render, redirect
@@ -16,6 +19,19 @@ def landing(request):
             form = MyModelForm()
         return render(request, 'your_template.html', {'form': form})
     """
+    if request.method == "POST":
+        new_owner = User.objects.create(
+            email = str(request.POST['email']),
+            password = '********',
+            username = request.POST['name'],
+        )
+        new = Surf(
+            owner = new_owner, #.username = request.POST['name']
+            subject = str(request.POST['subject']),
+            mess = str(request.POST['message']),
+            rating = float(request.POST['ratingInput'])
+        )
+        new.save()
     return render(request, './mainapp/index.html', status=200)
 
 def faqs(request):

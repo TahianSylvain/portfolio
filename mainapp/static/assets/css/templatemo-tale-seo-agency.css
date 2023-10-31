@@ -824,11 +824,12 @@ Banner Style
 
 .main-banner {
   position: relative;
-  padding: 0px 0px 0px 0px;
+  padding: 125px 0px 0px 0px;
 }
 
 .main-banner:after {
   content: url(../images/banner-right.png);
+  /* content: url(../images/andry.webp); */
   top: -1px;
   right: 0;
   position: absolute;

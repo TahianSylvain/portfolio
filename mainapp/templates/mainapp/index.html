@@ -7,7 +7,7 @@
     <link 
      href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;600;700;800&display=swap"
      rel="stylesheet"
-    >
+    ><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="shortcut icon" href="{% static './assets/images/logo.png' %}" type="image/x-icon">
     <title>Good VIBES - Landing HERE.</title> {# translation "Hi! Have GOOD vibes here" #}
 
@@ -34,7 +34,6 @@
 
 <body>
 
-  <!-- ***** Preloader Start ***** -->
   <div id="js-preloader" class="js-preloader">
     <div class="preloader-inner">
       <span class="dot"></span>
@@ -45,9 +44,6 @@
       </div>
     </div>
   </div>
-  <!-- ***** Preloader End ***** -->
-
-  <!-- ***** Pre-Header Area Start ***** -->
   <div class="pre-header">
     <div class="container">
       <div class="row">
@@ -65,7 +61,7 @@
             <ul>
               <li><a href="https://facbook.com/?"><i class="fab fa-facebook"></i></a></li>
               <li><a href="https://github.com/TahianSylvain/"><i class="fab fa-twitter"></i></a></li>
-              <li><a href="https://linkedin.com/?tahiansylvain"><i class="fab fa-linkedin"></i></a></li>
+              <li><a href="https://linkedin.com/in/tahiansylvain%20andry"><i class="fab fa-linkedin"></i></a></li>
               <li><a href="#"><i class="fab fa-google-plus"></i></a></li>
             </ul>
           </div>
@@ -73,9 +69,6 @@
       </div>
     </div>
   </div>
-  <!-- ***** Pre-Header Area End ***** -->
-
-  <!-- ***** Header Area Start ***** -->
   <header class="header-area header-sticky">
     <div class="container">
         <div class="row">
@@ -111,18 +104,30 @@
   <!-- ***** Header Area End ***** -->
 
   <div class="main-banner" id="top">
-
-    <img id="imagine" src="{% static './assets/images/video-thumb.jpg' %}" width="30px" height="30PX">
-    <div class="container">
+    <div class="container">      
       <div class="row">
         <div class="col-lg-7">
           <div class="caption header-text">
             <h6>Reactivist CODER</h6><!-- <h6>SEO DIGITAL AGENCY</h6> -->
             <div class="line-dec"></div>
             
-            <h4>Dive <em>Into My Vibes</em> @ <span>TahianSylvain<!-- With Tale --></span></h4> 
-            <p>Tale is the best SEO agency website template using Bootstrap v5.2.2 CSS for your company. It is a free download provided by TemplateMo. There are 3 HTML pages, <a href="index.html">Home</a>, <a href="about.html">About</a>, and <a href="faqs.html">FAQ</a>.</p>
-            <div class="main-button scroll-to-section"><a href="#services">Discover More</a></div>
+            <h4>Dive <em>Into my Vibes</em> @ <span>TahianSylvain<!-- With Tale --></span></h4> 
+            <!-- <p>Tale is the best SEO agency website template using Bootstrap v5.2.2 CSS for your company. 
+              It is a free download provided by TemplateMo. There are 3 HTML pages, 
+              <a href="index.html">Home</a>, <a href="about.html">About</a>, and <a href="faqs.html">FAQ</a>.</p> -->
+            
+            <div class="cellular">
+              <img id="imagine" src="{% static './assets/images/andry.webp' %}" >
+              <!-- <p>I am a junior software engineer, with my certification in React and Python from FreeCodeCamp. I assure offering sensational and impressive modelization for real-time Digital Development. Sponsored by <a href="https://ispm-edu.mg/" target="_blank">ISPM University</a>, <a href="https://www.freecodecamp.org/">freeCodeCamp</a>, and <a target="_blank" href="https://www.orangedigitalcenters.com/country/">ODC</a></p> -->
+  
+              <p> I am a junior software ingeneer, with my certified in React and Python formation at FreeCodeCamp.
+                  I assure offering sensational and impressive modelisation for real time Digital Developpement. 
+                  Sponsorized by <a href="https://ispm-edu.mg/" target="_blank">ISPM University</a>,
+                <a href="https://www.freecodecamp.org/">freeCodeCamp
+                </a>, and <a target="_blank" href="https://www.orangedigitalcenters.com/country/">ODC redland</a> 
+              </p>
+            </div>
+               <div class="main-button scroll-to-section"><a href="#services">Discover More</a></div>
             <span>or</span>
             <div class="second-button"><a href="{% url 'faqs' %}">Check our FAQs</a></div>
           </div>
@@ -302,6 +307,7 @@
               </div>
               <div class="col-lg-8">
                 <form id="contact-form" action="" method="post">
+                  {% csrf_token %}
                   <div class="row">
                     <div class="col-lg-12">
                       <div class="section-heading">
@@ -319,16 +325,18 @@
                       </fieldset>
                     </div>
                     <div class="col-lg-6">
-                      <fieldset>
-                        <input type="text" name="email" id="email" pattern="[^ @]*@[^ @]*" placeholder="Your E-mail..." required="">
+                      <fieldset> 
+                        <input type="email" name="email" id="email" pattern="[^ @]*@[^ @]*" placeholder="Your E-mail..." required="">
                       </fieldset>
                     </div>
                     <div class="col-lg-6">
                       <fieldset>
-                        <!-- <input height="25" type="range" name="howGood" placeholder="Rating" id="rating"> -->
-                        <input type="range" id="ratingInput" min="0" max="5" step="0.1" value="0" oninput="updateRating()">
-                        <span id="currentRating">0</span>
-
+                        <span class="fa fa-star checked"></span>
+                        <span class="fa fa-star checked"></span>
+                        <span class="fa fa-star checked"></span>
+                        <span class="fa fa-star"></span>
+                        <span class="fa fa-star"></span>
+                        <input type="range" name="ratingInput" id="ratingInput" min="0.5" max="5" step="0.25" default="2.75" oninput="updateRating()">
                       </fieldset>
                     </div>
                     <div class="col-lg-12">
@@ -348,20 +356,21 @@
                     <div class="col-lg-4">
                       <div class="info-item">
                         <i class="fa fa-phone"></i>
-                        <h4><a href="#">010-020-0340</a></h4>
+                        <h4><a href="tel:+261 032 49 440 18">+261 032 49 440 18</a></h4>
                       </div>
                     </div>
                     <div class="col-lg-4">
                       <div class="info-item">
                         <i class="fa fa-envelope"></i>
-                        <h4><a href="mailto:ranjalahyandrytahianasylvain@gmail.com">info@company.com</a></h4>
+                        <!-- <h4><a href="mailto:ranjalahyandrytahianasylvain@gmail.com">info@company.com</a></h4> -->
                         <h4><a href="mailto:ranjalahyandrytahianasylvain@gmail.com">info@company.com</a></h4>
                       </div>
                     </div>
                     <div class="col-lg-4">
                       <div class="info-item">
                         <i class="fa fa-map-marker"></i>
-                        <h4><a href="#">Sunny Isles Beach, FL 33160, United States</a></h4>
+                        <!-- <a href="#">Sunny Isles Beach, FL 33160, United States</a> -->
+                        <h4><a href="https://map.google.com/?Alasora Tana-III" target="_blank" rel="noopener noreferrer">Madagascar Island</a></h4>
                       </div>
                     </div>
                   </div>
@@ -377,7 +386,7 @@
   <footer>
     <div class="container">
       <div class="col-lg-12">
-        <p>Copyright © 2036 <a href="#">Tale SEO Agency</a>. All rights reserved. 
+        <p>Copyright © 2036 <a href="https://pythonanywhere.com/">Python AnyWhere Hoster</a>. All rights reserved. 
         
         <br>Design: <a href="https://templatemo.com" target="_blank">TemplateMo</a></p>
       </div>
@@ -398,7 +407,7 @@
     function updateRating() {
       var ratingInput = document.getElementById("ratingInput");
       var currentRating = document.getElementById("currentRating");
-      currentRating.innerHTML = ratingInput.value;
+      currentRating.value = ratingInput.value;
     }
   </script>
   

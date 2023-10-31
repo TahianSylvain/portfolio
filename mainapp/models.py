@@ -14,4 +14,4 @@ class Surf(models.Model):
         pass
 
     def __str__(self):
-        return self.id + self.owner + self.subject
+        return self.subject
