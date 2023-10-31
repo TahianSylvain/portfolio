@@ -824,7 +824,7 @@ Banner Style
 
 .main-banner {
   position: relative;
-  padding: 295px 0px 185px 0px;
+  padding: 0px 0px 0px 0px;
 }
 
 .main-banner:after {
