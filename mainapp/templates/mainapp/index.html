@@ -8,7 +8,7 @@
      href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;600;700;800&display=swap"
      rel="stylesheet"
     ><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    <link rel="shortcut icon" href="{% static './assets/images/logo.png' %}" type="image/x-icon">
+    <link rel="shortcut icon" href="{% static './assets/images/images.jpeg' %}" type="image/x-icon">
     <title>Good VIBES - Landing HERE.</title> {# translation "Hi! Have GOOD vibes here" #}
 
     <!-- Bootstrap core CSS -->
@@ -331,12 +331,14 @@
                     </div>
                     <div class="col-lg-6">
                       <fieldset>
-                        <span class="fa fa-star checked"></span>
-                        <span class="fa fa-star checked"></span>
-                        <span class="fa fa-star checked"></span>
-                        <span class="fa fa-star"></span>
-                        <span class="fa fa-star"></span>
-                        <input type="range" name="ratingInput" id="ratingInput" min="0.5" max="5" step="0.25" default="2.75" oninput="updateRating()">
+                      <span id="star-rating">
+                          <i class="fa fa-star checked" data-rating="1"></i>
+                          <i class="fa fa-star" data-rating="2"></i>
+                          <i class="fa fa-star" data-rating="3"></i>
+                          <i class="fa fa-star" data-rating="4"></i>
+                          <i class="fa fa-star" data-rating="5"></i>
+                      </span>
+                      <input type="number" id="ratingInput" name="rating" value="0">
                       </fieldset>
                     </div>
                     <div class="col-lg-12">
@@ -409,6 +411,23 @@
       var currentRating = document.getElementById("currentRating");
       currentRating.value = ratingInput.value;
     }
+    
+    document.addEventListener("DOMContentLoaded", function () {
+      const stars = document.querySelectorAll("#star-rating i");
+      const ratingInput = document.getElementById("ratingInput");
+  
+      stars.forEach((star) => {
+          star.addEventListener("click", function () {
+              const rating = this.getAttribute("data-rating");
+              ratingInput.value = rating;
+  
+              // Add the "checked" class to stars up to the selected rating
+              for (let i = 0; i < rating; i++) {
+                  stars[i].classList.add("checked");
+              }
+          });
+      });
+    });  
   </script>
   
 
