@@ -914,7 +914,8 @@ Services Style
 }
 
 .services::before {
-  content: url(../images/services-left.jpg);
+  content: url(../images/about-us-image.jpg);
+  /* content: url(../images/services-left.jpg); */
   top: 120px;
   left: 0;
   position: absolute;
@@ -946,7 +947,7 @@ Services Style
 
 .services .service-item h4 {
   font-size: 20px;
-  color: #2a2a2a;
+  color: #3a125c;
   margin-top: 20px;
   line-height: 30px;
   transition: all .4s;

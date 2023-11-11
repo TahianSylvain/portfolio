@@ -1,9 +1,9 @@
-from .views import landing, about, faqs
+from .views import landing, faqs, download
 from django.urls import path 
 
 
 urlpatterns = [
     path('', landing, name='landing'),
     path('faqs/', faqs, name="faqs"),
-    path('about/', about, name="about"),
+    path('download/', download, name="download")
 ]

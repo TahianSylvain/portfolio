@@ -3,10 +3,6 @@ from pathlib import Path
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
 BASE_DIR = Path(__file__).resolve().parent.parent
 
-
-# Quick-start development settings - unsuitable for production
-# See https://docs.djangoproject.com/en/3.2/howto/deployment/checklist/
-
 # SECURITY WARNING: keep the secret key used in production secret!
 SECRET_KEY = 'django-insecure-zh^_^6*^gk#1$i=b-s5nm!f1^dmaea=#u+)^n3-0q%%rd28!0t'
 
@@ -21,6 +17,9 @@ ALLOWED_HOSTS = []
 INSTALLED_APPS = [
     'mainapp',
 
+    'django_celery_beat',
+    'django_celery_results',
+    
     'django.contrib.admin',
     'django.contrib.auth',
     'django.contrib.contenttypes',
@@ -111,5 +110,30 @@ STATIC_URL = '/static/'
 STATICFILES_DIRS = [os.path.join(BASE_DIR, 'static')]
 
 
+# FTP_service
+MEDIA_URL = "/media/"
+MEDIA_ROOT = os.path.join(BASE_DIR, 'media')
+
+
 # Default primary key field type
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
+
+
+# CELERY SETTINGS
+CELERY_BROKER_URL = "redis://localhost:6379" #install: redis -v 5.0.10 linux github
+CELERY_ACCEPT_CONTENT = ['application/json']
+CELERY_RESULT_SERIALIZER = "json"
+CELERY_TASK_SEREALIZER = "json"
+CELERY_TIMEZONE = TIME_ZONE #"UTC"
+CELERY_RESULTBACKEND = 'django-db'
+CELERY_BEAT_SCHEDULER = 'django_celery_beat.schedulers:DatabaseScheduler'
+
+
+#SMTP_SERVICE
+EMAIL_BACKEND = "django.core.mail.backends.smtp.EmailBackend"
+EMAIL_USE_TLS = True
+EMAIL_HOST = "smtp.gmail.com"
+EMAIL_PORT = 587
+EMAIL_HOST_USER = 'ranjalahyandrytahianasylvain@gmail.com'
+EMAIL_HOST_PASSWORD = "dhsbbrbcinkfeuxp " # receive from "App password from gmail"
+DEFAULT_FROM_EMAIL = 'Celery <ranjalahyandrytahianasylvain@gmail.com>'

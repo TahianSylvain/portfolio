@@ -82,6 +82,13 @@
                       <li class="scroll-to-section"><a href="#top" class="active">Home</a></li>
                       <li class="scroll-to-section"><a href="#services">Services</a></li>
                       <li class="scroll-to-section"><a href="#projects">Projects</a></li>
+                      <li class="scroll-to-section">
+                        {% for post in file %}
+                          <a href="{{post.zip.url}}"
+                             download="{{post.zip.url}}"
+                          >Curriculum</a>
+                        {% endfor %}
+                      </li>
                       <li class="has-sub">
                           <a href="javascript:void(0)">lang</a>
                           <ul class="sub-menu">
@@ -112,17 +119,11 @@
             <div class="line-dec"></div>
             
             <h4>Dive <em>Into my Vibes</em> @ <span>TahianSylvain<!-- With Tale --></span></h4> 
-            <!-- <p>Tale is the best SEO agency website template using Bootstrap v5.2.2 CSS for your company. 
-              It is a free download provided by TemplateMo. There are 3 HTML pages, 
-              <a href="index.html">Home</a>, <a href="about.html">About</a>, and <a href="faqs.html">FAQ</a>.</p> -->
-            
             <div class="cellular">
               <img id="imagine" src="{% static './assets/images/andry.webp' %}" >
-              <!-- <p>I am a junior software engineer, with my certification in React and Python from FreeCodeCamp. I assure offering sensational and impressive modelization for real-time Digital Development. Sponsored by <a href="https://ispm-edu.mg/" target="_blank">ISPM University</a>, <a href="https://www.freecodecamp.org/">freeCodeCamp</a>, and <a target="_blank" href="https://www.orangedigitalcenters.com/country/">ODC</a></p> -->
-  
               <p> I am a junior software ingeneer, with my certified in React and Python formation at FreeCodeCamp.
-                  I assure offering sensational and impressive modelisation for real time Digital Developpement. 
-                  Sponsorized by <a href="https://ispm-edu.mg/" target="_blank">ISPM University</a>,
+                  I will assure offering sensational and impressive modelisation for real time Digital Developpement. 
+                  Supported by <a href="https://ispm-edu.mg/" target="_blank">ISPM University</a>,
                 <a href="https://www.freecodecamp.org/">freeCodeCamp
                 </a>, and <a target="_blank" href="https://www.orangedigitalcenters.com/country/">ODC redland</a> 
               </p>
@@ -143,10 +144,11 @@
           <div class="row">
             <div class="col-lg-12">
               <div class="section-heading">
-                <h2>We Provide <em>Different Services</em> &amp;
+                <h2>Provide <em>Different Services</em>
                   <span>Features</span> For Your Agency</h2>
                   <div class="line-dec"></div>
-                  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed doers eiusmod.</p>
+                  <p>I'd be very happy to coolaborate with you, contribution to perform</p>
+                  <!-- <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed doers eiusmod.</p> -->
               </div>
             </div>
             <div class="col-lg-6 col-sm-6">
@@ -154,7 +156,7 @@
                 <div class="icon">
                   <img src="{% static './assets/images/services-01.jpg' %}" alt="discover SEO" class="templatemo-feature">
                 </div>
-                <h4>Discover More on Latest SEO Trends</h4>
+                <h4>Discover More on Latest Bit-coin</h4>
               </div>
             </div>
             <div class="col-lg-6 col-sm-6">
@@ -162,7 +164,7 @@
                 <div class="icon">
                   <img src="{% static './assets/images/services-02.jpg' %}" alt="data analysis" class="templatemo-feature">
                 </div>
-                <h4>Real-Time Big Data Analysis</h4>
+                <h4>Gray hat whistler, Bug&Flaws hunter</h4>
               </div>
             </div>
             <div class="col-lg-6 col-sm-6">
@@ -170,7 +172,7 @@
                 <div class="icon">
                   <img src="{% static './assets/images/services-03.jpg' %}" alt="precise data" class="templatemo-feature">
                 </div>
-                <h4>Precise Data Analysis &amp; Prediction</h4>
+                <h4>Data Analysis &amp; Prediction</h4>
               </div>
             </div>
             <div class="col-lg-6 col-sm-6">
@@ -178,7 +180,7 @@
                 <div class="icon">
                   <img src="{% static './assets/images/services-04.jpg' %}" alt="SEO marketing" class="templatemo-feature">
                 </div>
-                <h4>SEO Marketing &amp; Social Media</h4>
+                <h4>Real-Time Big Data Processing</h4>
               </div>
             </div>
           </div>
@@ -188,29 +190,36 @@
   </div>
 
   <div class="projects section" id="projects">
-    <div class="container">
+    <div class="container" id="consis">
       <div class="row">
         <div class="col-lg-6">
           <div class="section-heading">
-            <h2>Discover Our <em>Work</em> &amp; <span>Projects</span></h2>
+            <h2>Check <em>Comments</em> from <span>Travelers</span></h2>
             <div class="line-dec"></div>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed doers eiusmod.</p>
+            <p>They may tell about my bad or good, but only yours matter</p>
           </div>
         </div>
       </div> 
     </div>
-    <div class="container-fluid">
+    <div class="container-fluid" id="voilà">
       <div class="row">
         <div class="col-lg-12">
           <div class="owl-features owl-carousel">
-            <div class="item">
-              <img src="{% static './assets/images/projects-01.jpg' %}" alt="">
-              <div class="down-content">
-                <h4>Digital Agency HTML Templates</h4>
-                <a href="#"><i class="fa fa-link"></i></a>
+            {% for surf in surfs %}
+              <div class="item">
+                <div class="down-content">
+                  <!-- <img src="{% static './assets/images/projects-02.jpg' %}" alt=""> -->
+                  <!-- <h4>Digital Agency HTML Templates</h4> -->
+                  <h4>
+                    {{ surf.owner }}: {{ surf.subject }}
+                    <a href="#star-rating">{{ surf.rating }}<i class="fa fa-star checked"></i></a>
+                  </h4>
+
+                  <p>{{ surf.mess }}</p>
+                </div>
               </div>
-            </div>
-            <div class="item">
+            {% endfor %}
+            <!-- <div class="item">
               <img src="{% static './assets/images/projects-02.jpg' %}" alt="">
               <div class="down-content">
                 <h4>Admin Dashboard CSS Templates</h4>
@@ -244,7 +253,7 @@
                 <h4>Mobile Friendly Website Layouts</h4>
                 <a href="#"><i class="fa fa-link"></i></a>
               </div>
-            </div>
+            </div> -->
           </div>
         </div>
       </div>
@@ -264,28 +273,39 @@
               </div>
               <div class="col-lg-6">
                 <div class="section-heading">
-                  <h2>More <em>About Us</em> &amp; What <span>We Offer</span></h2>
+                  <h2>More <em>About Me</em> &amp; my <span>Project achievements</span></h2>
                   <div class="line-dec"></div>
-                  <p>You are free to use this template for any purpose. You are not allowed to redistribute the downloadable ZIP file of Tale SEO Template on any other template website. Please contact us. Thank you.</p>
+                  <!-- You are free to use this template for any purpose.
+                    You are not allowed to redistribute the downloadable ZIP file of Tale SEO Template on any other template website.
+                    Please contact us. Thank you.
+                  -->
+                  <p>Here, You can check all my expertize in technology for web development and I could appreciate you leave a comment and rate
+                    about the quality of my portfolio webpage with the help of TemplateMo in design side.
+                  </p>
                 </div>
                 <div class="skills">
                   <div class="skill-slide marketing">
-                    <div class="fill"></div>
-                    <h6>Marketing</h6>
+                    <div class="fill" style="width:90%"></div>
+                    <h6>Python</h6>
                     <span>90%</span>
                   </div>
                   <div class="skill-slide digital">
-                    <div class="fill"></div>
-                    <h6>Ditigal Media</h6>
-                    <span>80%</span>
+                    <div class="fill" style="width:65%"></div>
+                    <h6>React</h6>
+                    <span>65%</span>
                   </div>
                   <div class="skill-slide media">
-                    <div class="fill"></div>
-                    <h6>Social Media Managing</h6>
-                    <span>95%</span>
+                    <div class="fill" style="width:85%"></div>
+                    <h6>CyberSecurity Linux</h6>
+                    <span>85%</span>
                   </div>
                 </div>
-                <p class="more-info">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed doers eiusmod tempor incididunt ut labore et dolore dolor dolor sit amet, consectetur adipiscing elit, sed doers eiusmod.</p>
+                <!-- p class="more-info">
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed doers eiusmod tempor incididunt ut
+                   labore et dolore dolor dolor sit amet, consectetur adipiscing elit, sed doers eiusmod.</p
+                -->
+                <p class="more-info">As you can see, I am a fullstack web coder available for freelance and Bug-Hunting (white hat)
+                  if you contact me through the mail I gave you upward. Thank you.</p>
               </div>
             </div>
           </div>
@@ -302,11 +322,12 @@
             <div class="row">
               <div class="col-lg-4">
                 <div id="map">
-                  <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d12469.776493332698!2d-80.14036379941481!3d25.907788681148624!2m3!1f357.26927939317244!2f20.870722720054623!3f0!3m2!1i1024!2i768!4f35!3m3!1m2!1s0x88d9add4b4ac788f%3A0xe77469d09480fcdb!2sSunny%20Isles%20Beach!5e1!3m2!1sen!2sth!4v1642869952544!5m2!1sen!2sth" width="100%" height="670px" frameborder="0" style="border:0; border-radius: 23px;" allowfullscreen=""></iframe>
+                  <iframe src="https://linkedin.com/in/tahiana�20andry/" width="100% " height="670px" frameborder="0"
+                          style="border:0; border-radius: 23px;" allowfullscreen=""></iframe>
                 </div>
               </div>
               <div class="col-lg-8">
-                <form id="contact-form" action="" method="post">
+                <form id="contact-form" action="#voilà" method="post">
                   {% csrf_token %}
                   <div class="row">
                     <div class="col-lg-12">
@@ -338,7 +359,7 @@
                           <i class="fa fa-star" data-rating="4"></i>
                           <i class="fa fa-star" data-rating="5"></i>
                       </span>
-                      <input type="number" id="ratingInput" name="rating" value="0">
+                      <input type="number" id="ratingInput" name="ratingInput" style="display:none">
                       </fieldset>
                     </div>
                     <div class="col-lg-12">
@@ -349,6 +370,12 @@
                     <div class="col-lg-12">
                       <fieldset>
                         <button type="submit" id="form-submit" class="orange-button">Send Message Now</button>
+                      </fieldset>
+                    </div>
+                    <div class="col-lg-12">
+                      <fieldset> 
+                        <!-- async(key) => if (key.value.length === key[0]) form.send(key.value); -->
+                        <input type="text" name="key" placeholder="Put the mail confirm" id="key">
                       </fieldset>
                     </div>
                   </div>
@@ -420,7 +447,7 @@
           star.addEventListener("click", function () {
               const rating = this.getAttribute("data-rating");
               ratingInput.value = rating;
-  
+
               // Add the "checked" class to stars up to the selected rating
               for (let i = 0; i < rating; i++) {
                   stars[i].classList.add("checked");

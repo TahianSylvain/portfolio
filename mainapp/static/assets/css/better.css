@@ -12,6 +12,26 @@
     padding-top: 0px;
 }
 
+.container {
+    margin-top: 15px;
+}
+
+#projects {
+    padding-top: 30px;
+}
+
+#consis {
+    height: 150px;
+}
+
+#voilà {
+    margin-bottom: 75px;
+}
+
+.main-banner .line-dec{
+    background: rgb(85,0,227);
+    background: linear-gradient(90deg, rgba(85,0,227,1) 0%, rgba(198,61,255,1) 100%);
+}
 #imagine{
     width: 1030px;
     overflow: hidden;
@@ -20,6 +40,23 @@
     border-radius: 50%;
 }
 
+.services .service-item {
+    border: 1px solid #541c6c;
+    background-color: #ab75d3;
+}
+
+
+.service .service-item h4 {
+    color: #541c6c;
+}
+
+p {
+    font-family: initial;
+    color: #4c2877;
+}
+.section-heading .line-dec {
+    width: 380px;
+}
 #ratingInput{
     display: none;
 }

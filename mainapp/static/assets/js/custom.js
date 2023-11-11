@@ -7,7 +7,6 @@
 		console.log('loading')
 		setTimeout(function () {
 			$('#js-preloader').addClass('loaded');
-			
 			// Stop the animation of .dots span
             $('.dot').css('animation', 'none');
             $('.dots').css('animation', 'none');
