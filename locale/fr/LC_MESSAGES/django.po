@@ -1,0 +1,232 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2023-11-13 17:25+0300\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n > 1);\n"
+
+#: agencing/settings.py:102
+msgid "English"
+msgstr "Anglais"
+
+#: agencing/settings.py:103
+msgid "French"
+msgstr "Français"
+
+#: agencing/urls.py:11
+msgid "admin/"
+msgstr "admin/"
+
+#: mainapp/templates/mainapp/index.html:12
+msgid "Good VIBES - Landing HERE."
+msgstr "Acceuillir avec VITALITÉ"
+
+#: mainapp/templates/mainapp/index.html:83
+msgid "Home"
+msgstr "Accueil"
+
+#: mainapp/templates/mainapp/index.html:84
+msgid "Services"
+msgstr "Services"
+
+#: mainapp/templates/mainapp/index.html:85
+msgid "Projects"
+msgstr "Projets"
+
+#: mainapp/templates/mainapp/index.html:96
+msgid "english"
+msgstr "anglais"
+
+#: mainapp/templates/mainapp/index.html:97
+msgid "français"
+msgstr "français"
+
+#: mainapp/templates/mainapp/index.html:101
+msgid "Contact"
+msgstr "Contact"
+
+#: mainapp/templates/mainapp/index.html:104
+msgid "Menu"
+msgstr "Menu"
+
+#: mainapp/templates/mainapp/index.html:119
+msgid "Reactivist CODER"
+msgstr "CODER Réactiviste"
+
+#: mainapp/templates/mainapp/index.html:122
+msgid "Dive"
+msgstr "Entrez"
+
+#: mainapp/templates/mainapp/index.html:122
+msgid "Into my Vibes"
+msgstr "à Monde"
+
+#: mainapp/templates/mainapp/index.html:128
+msgid ""
+"I am a junior software ingeneer, with my certified in React and Python "
+"formation at FreeCodeCamp.I will assure offering sensational and impressive "
+"modelisation for real time Digital Developpement. Supported by "
+msgstr ""
+"Je suis un codeur junior, certifié en React et en Python obtenus à "
+"FreeCodeCamp. J' offrirais d'intuitive et de sensationel modélisation pour "
+"le developpement digital en actions mésurables. Avec les supports "
+
+#: mainapp/templates/mainapp/index.html:129
+msgid "ISPM University"
+msgstr "Université ISPM"
+
+#: mainapp/templates/mainapp/index.html:134
+msgid "Discover More"
+msgstr "En savoir plus"
+
+#: mainapp/templates/mainapp/index.html:136
+msgid "Check our WORKS"
+msgstr "Découvrez nos TRAVAUX"
+
+#: mainapp/templates/mainapp/index.html:150
+msgid "Provide"
+msgstr "Fournir"
+
+#: mainapp/templates/mainapp/index.html:150
+msgid "Different Services"
+msgstr "Différents Services"
+
+#: mainapp/templates/mainapp/index.html:151
+msgid "Features"
+msgstr "Fonctionnalités"
+
+#: mainapp/templates/mainapp/index.html:151
+msgid "For Your Agency"
+msgstr "Pour Votre Agence"
+
+#: mainapp/templates/mainapp/index.html:153
+#, fuzzy
+#| msgid "I'd be very happy to coolaborate with you to perform contributions"
+msgid "I'd be very happy to coolaborate with you, contribution to perform"
+msgstr ""
+"Je serais ravi de coopérer avec vous pour des contributions à effectuer"
+
+#: mainapp/templates/mainapp/index.html:161
+msgid "Discover More on Latest Bit-coin"
+msgstr "Découvrez-en plus sur le dernier Bit-coin"
+
+#: mainapp/templates/mainapp/index.html:169
+msgid "Gray hat whistler, Bug&Flaws hunter"
+msgstr "Chasseur de failles et d'information sensibles"
+
+#: mainapp/templates/mainapp/index.html:177
+msgid "Data Analysis"
+msgstr "Analyse de données"
+
+#: mainapp/templates/mainapp/index.html:177
+msgid "Prediction"
+msgstr "Prédiction"
+
+#: mainapp/templates/mainapp/index.html:185
+msgid "Real-Time Big Data Processing"
+msgstr "Processus d'affinage de Mega-données"
+
+#: mainapp/templates/mainapp/index.html:199
+msgid "Check"
+msgstr "Survolez les"
+
+#: mainapp/templates/mainapp/index.html:199
+msgid "Comments"
+msgstr "Avis"
+
+#: mainapp/templates/mainapp/index.html:199
+msgid "from"
+msgstr "des"
+
+#: mainapp/templates/mainapp/index.html:200
+msgid "Travelers"
+msgstr "autres"
+
+#: mainapp/templates/mainapp/index.html:202
+msgid "They may tell about my bad or good, but only yours matter"
+msgstr "Ils pourront dire ce qu'ils veulent, seul le votre contera pour moi"
+
+#: mainapp/templates/mainapp/index.html:278
+msgid "More"
+msgstr "Plus"
+
+#: mainapp/templates/mainapp/index.html:278
+msgid "About Me"
+msgstr "A propos de moi"
+
+#: mainapp/templates/mainapp/index.html:278
+msgid "my"
+msgstr "de mes"
+
+#: mainapp/templates/mainapp/index.html:279
+msgid "Project achievements"
+msgstr "Projets accomplis"
+
+#: mainapp/templates/mainapp/index.html:282
+msgid ""
+"Here, You can check all my expertize in technology for web development and I "
+"could appreciate you leave a comment and rate about the quality of my "
+"portfolio webpage with the help of TemplateMo in design side."
+msgstr ""
+"Vous pourrez voir mes expériences en matière de technologie pour le "
+"development web et J' apprecierais que vous me laissiez commentaire et "
+"étoiles par rapport aux qualité de mon site web avec l'appuie design de "
+"TemplateMo"
+
+#: mainapp/templates/mainapp/index.html:306
+msgid ""
+"As you can see, I am a fullstack web coder available for freelance and Bug-"
+"Hunting (white hat) if you contact me through the mail I gave you upward. "
+"Thank you."
+msgstr ""
+"Comme vous le constater, Je suis a developpeur web fullstack disponible à "
+"engager ou pour dépanner des risques de failles si vous me contactiez depuis "
+"le mail donné ci-dessous. Merci à vous"
+
+#: mainapp/templates/mainapp/index.html:333
+#, fuzzy
+#| msgid "Contact"
+msgid "Contact Us"
+msgstr "Contactez Nous"
+
+#: mainapp/templates/mainapp/index.html:333
+msgid "Get In"
+msgstr "Laisser votre"
+
+#: mainapp/templates/mainapp/index.html:333
+msgid "Touch"
+msgstr "Avis"
+
+#: mainapp/templates/mainapp/index.html:338
+msgid "Your Name..."
+msgstr "Votre  Nom ..."
+
+#: mainapp/templates/mainapp/index.html:343
+msgid "Subject..."
+msgstr "Sujet..."
+
+#: mainapp/templates/mainapp/index.html:349
+msgid "Your E-mail..."
+msgstr "Votre Addresse E-mail..."
+
+#: mainapp/templates/mainapp/index.html:366
+msgid "Your Message"
+msgstr "Votre Message..."
+
+#: mainapp/templates/mainapp/index.html:371
+msgid "Send Message Now"
+msgstr "Envoier Maintenant"
+
+#: mainapp/templates/mainapp/index.html:377
+msgid "Put the mail confirm"
+msgstr "Mettre la confirmation par mail"
+
+#~ msgid "Us"
+#~ msgstr "Nous"

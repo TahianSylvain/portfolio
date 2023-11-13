@@ -1,3 +1,7 @@
+.pre-header{
+    padding:0px;
+}
+
 .main-banner{
     padding-bottom: 0px;
     padding-top: 125px;
@@ -7,6 +11,30 @@
     padding-right: 0px;
 }
 
+._tete_{
+    height: 90px;
+}
+
+#logo-icons8{
+    margin-top: 12px;
+}
+
+.header-area .main-nav .logo {
+    margin-top: 12px;
+}
+
+.header-area {
+    height: 90px;
+    top: 68px;
+}
+
+#_tete_ > div:nth-child(1) {
+    margin-top: 0px;
+}
+
+.header-area .main-nav .nav li.has-sub::after {
+    display:none;
+}
 .section{
     margin: 0%;
     padding-top: 0px;

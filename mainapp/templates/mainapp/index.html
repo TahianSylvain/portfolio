@@ -1,39 +1,37 @@
 <!DOCTYPE html>{% load static %}
-<html lang="en">
+<html lang="en">{% load i18n %}
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
-    <link 
-     href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;600;700;800&display=swap"
-     rel="stylesheet"
-    ><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    <link rel="shortcut icon" href="{% static './assets/images/images.jpeg' %}" type="image/x-icon">
-    <title>Good VIBES - Landing HERE.</title> {# translation "Hi! Have GOOD vibes here" #}
+    <link rel="stylesheet"
+      target="_blank" href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;600;700;800&display=swap">
+    <link rel="stylesheet" target="_blank" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="shortcut icon" target="_blank" href="{% static './assets/images/images.jpeg' %}" type="image/x-icon">
+    
+    <title>{% translate "Good VIBES - Landing HERE." %}</title> 
 
     <!-- Bootstrap core CSS -->
-    <link href="{% static './vendor/bootstrap/css/bootstrap.min.css' %}" rel="stylesheet">
+    <link target="_blank" href="{% static './vendor/bootstrap/css/bootstrap.min.css' %}" rel="stylesheet">
 
 
     <!-- Additional CSS Files -->
-    <link rel="stylesheet" href="{% static './assets/css/fontawesome.css' %}">
-    <link rel="stylesheet" href="{% static './assets/css/templatemo-tale-seo-agency.css' %}">
-    <link rel="stylesheet" href="{% static './assets/css/owl.css' %}">
-    <link rel="stylesheet" href="{% static './assets/css/animate.css' %}">
-    <link rel="stylesheet"href="https://unpkg.com/swiper@7/swiper-bundle.min.css"/>
+    <link rel="stylesheet" target="_blank" href="{% static './assets/css/fontawesome.css' %}">
+    <link rel="stylesheet" target="_blank" href="{% static './assets/css/templatemo-tale-seo-agency.css' %}">
+    <link rel="stylesheet" target="_blank" href="{% static './assets/css/owl.css' %}">
+    <link rel="stylesheet" target="_blank" href="{% static './assets/css/animate.css' %}">
+    <link rel="stylesheet"target="_blank" href="https://unpkg.com/swiper@7/swiper-bundle.min.css"/>
 
-    <link rel="stylesheet" href="{% static './assets/css/better.css' %}">
-    <link rel="stylesheet" href="{% static './assets/css/mobile.css' %}">
+    <link rel="stylesheet" target="_blank" href="{% static './assets/css/better.css' %}">
+    <link rel="stylesheet" target="_blank" href="{% static './assets/css/mobile.css' %}">
     <!--
     
-    TemplateMo 582 Tale SEO Agency
-    https://templatemo.com/tm-582-tale-seo-agency
-    
+      TemplateMo 582 Tale SEO Agency
+      https://templatemo.com/tm-582-tale-seo-agency
+
     -->
   </head>
-
 <body>
-
   <div id="js-preloader" class="js-preloader">
     <div class="preloader-inner">
       <span class="dot"></span>
@@ -50,57 +48,58 @@
         <div class="col-lg-8 col-sm-9">
           <div class="left-info">
             <ul>
-              <li><a href="tel:+2610324944018"><i class="fa fa-phone"></i>+261 032 49 440 18</a></li>
-              <li><a href="mailto:ranjalahyandrytahianasylvain@gmail.com"><i class="fa fa-envelope"></i>my.google.mail@gmail.com</a></li>
-              <li><a href="#"><i class="fa fa-map-marker"></i>Alasora Tana-III</a></li> 
+              <li><a target="_blank" href="tel:+2610324944018"><i class="fa fa-phone"></i>+261 032 49 440 18</a></li>
+              <li><a target="_blank" href="mailto:ranjalahyandrytahianasylvain@gmail.com">
+                <i class="fa fa-envelope"></i>ranjalahyandrytahianasylvain@gmail.com
+              </a></li>
+              <li><a target="_blank" href=""><i class="fa fa-map-marker"></i>Alasora Tana-III</a></li> 
             </ul>
           </div>
         </div>
         <div class="col-lg-4 col-sm-3">
           <div class="social-icons">
             <ul>
-              <li><a href="https://facbook.com/?"><i class="fab fa-facebook"></i></a></li>
-              <li><a href="https://github.com/TahianSylvain/"><i class="fab fa-twitter"></i></a></li>
-              <li><a href="https://linkedin.com/in/tahiansylvain%20andry"><i class="fab fa-linkedin"></i></a></li>
-              <li><a href="#"><i class="fab fa-google-plus"></i></a></li>
+              <li><a target="_blank" href="https://facbook.com/"><i class="fab fa-facebook" title="Andry Tahiana"></i></a></li>
+              <li><a target="_blank" href="https://github.com/TahianSylvain/"><i class="fab fa-twitter"></i></a></li>
+              <li><a target="_blank" href="https://www.linkedin.com/in/tahiansylvain-andry-a27534283/"><i class="fab fa-linkedin"></i></a></li>
             </ul>
           </div>
         </div>
       </div>
     </div>
   </div>
-  <header class="header-area header-sticky">
+  <header class="header-area header-sticky" id="_tete_">
     <div class="container">
         <div class="row">
             <div class="col-12">
                 <nav class="main-nav">
-                    <a href="{% url 'landing' %}" class="logo">
-                        <img src="{% static './assets/images/logo.png' %}" alt="" style="max-width: 112px;">
+                    <a target="_blank" id="logo-icons8" href="{% url 'landing' %}" class="logo">
+                        <img src="{% static './assets/images/logo-icons8.png' %}" alt="" style="max-width: 66px;">
                     </a>
                     <!-- ***** Menu Start ***** -->
                     <ul class="nav">
-                      <li class="scroll-to-section"><a href="#top" class="active">Home</a></li>
-                      <li class="scroll-to-section"><a href="#services">Services</a></li>
-                      <li class="scroll-to-section"><a href="#projects">Projects</a></li>
+                      <li class="scroll-to-section"><a target="_blank" href="#top" class="active">{% translate "Home" %}</a></li>
+                      <li class="scroll-to-section"><a target="_blank" href="#services">{% translate "Services" %}</a></li>
+                      <li class="scroll-to-section"><a target="_blank" href="#projects">{% translate "Projects" %}</a></li>
                       <li class="scroll-to-section">
                         {% for post in file %}
-                          <a href="{{post.zip.url}}"
+                          <a target="_blank" href="{{post.zip.url}}"
                              download="{{post.zip.url}}"
                           >Curriculum</a>
                         {% endfor %}
                       </li>
                       <li class="has-sub">
-                          <a href="javascript:void(0)">lang</a>
+                          <a target="_blank" href="javascript:void(0)">lang</a>
                           <ul class="sub-menu">
-                              <li><a href="#en">english</a></li>
-                              <li><a href="#fr">français</a></li>
+                              <li><a target="_blank" href="../../">{% translate "english" %}</a></li>
+                              <li><a target="_blank" href="../fr">{% translate "français" %}</a></li>
                           </ul>
                       </li>
-                      <li class="scroll-to-section"><a href="#infos">Infos</a></li>
-                      <li class="scroll-to-section"><a href="#contact">Contact</a></li>
+                      <li class="scroll-to-section"><a target="_blank" href="#infos">Infos</a></li>
+                      <li class="scroll-to-section"><a target="_blank" href="#contact">{% translate "Contact" %}</a></li>
                   </ul>   
                     <a class='menu-trigger'>
-                        <span>Menu</span>
+                        <span>{% translate "Menu" %}</span>
                     </a>
                     <!-- ***** Menu End ***** -->
                 </nav>
@@ -115,22 +114,24 @@
       <div class="row">
         <div class="col-lg-7">
           <div class="caption header-text">
-            <h6>Reactivist CODER</h6><!-- <h6>SEO DIGITAL AGENCY</h6> -->
+            <h6>{% translate "Reactivist CODER" %}</h6><!-- <h6>SEO DIGITAL AGENCY</h6> -->
             <div class="line-dec"></div>
             
-            <h4>Dive <em>Into my Vibes</em> @ <span>TahianSylvain<!-- With Tale --></span></h4> 
+            <h4>{% translate "Dive" %} <em>{% translate "Into my Vibes" %}</em> @ <span>TahianSylvain
+              <!-- With Tale --></span>
+            </h4> 
             <div class="cellular">
               <img id="imagine" src="{% static './assets/images/andry.webp' %}" >
-              <p> I am a junior software ingeneer, with my certified in React and Python formation at FreeCodeCamp.
-                  I will assure offering sensational and impressive modelisation for real time Digital Developpement. 
-                  Supported by <a href="https://ispm-edu.mg/" target="_blank">ISPM University</a>,
-                <a href="https://www.freecodecamp.org/">freeCodeCamp
-                </a>, and <a target="_blank" href="https://www.orangedigitalcenters.com/country/">ODC redland</a> 
+              <p> 
+                {% translate "I am a junior software ingeneer, with my certified in React and Python formation at FreeCodeCamp.I will assure offering sensational and impressive modelisation for real time Digital Developpement. Supported by " %}
+                <a target="_blank" href="https://ispm-edu.mg/" target="_blank">{% translate "ISPM University" %}</a>,
+                <a target="_blank" href="https://www.freecodecamp.org/">freeCodeCamp
+                </a>, and <a target="_blank" target="_blank" href="https://www.orangedigitalcenters.com/country/">ODC redland</a> 
               </p>
             </div>
-               <div class="main-button scroll-to-section"><a href="#services">Discover More</a></div>
+               <div class="main-button scroll-to-section"><a target="_blank" href="#services">{% translate "Discover More" %}</a></div>
             <span>or</span>
-            <div class="second-button"><a href="{% url 'faqs' %}">Check our FAQs</a></div>
+            <div class="second-button"><a target="_blank" href="">{% translate "Check our WORKS" %}</a></div>
           </div>
         </div>
       </div>
@@ -144,11 +145,10 @@
           <div class="row">
             <div class="col-lg-12">
               <div class="section-heading">
-                <h2>Provide <em>Different Services</em>
-                  <span>Features</span> For Your Agency</h2>
+                <h2>{% translate "Provide" %} <em>{% translate "Different Services" %}</em>
+                  <span>{% translate "Features" %}</span> {% translate "For Your Agency" %}</h2>
                   <div class="line-dec"></div>
-                  <p>I'd be very happy to coolaborate with you, contribution to perform</p>
-                  <!-- <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed doers eiusmod.</p> -->
+                  <p>{% translate "I'd be very happy to coolaborate with you, contribution to perform" %}</p>
               </div>
             </div>
             <div class="col-lg-6 col-sm-6">
@@ -156,7 +156,7 @@
                 <div class="icon">
                   <img src="{% static './assets/images/services-01.jpg' %}" alt="discover SEO" class="templatemo-feature">
                 </div>
-                <h4>Discover More on Latest Bit-coin</h4>
+                <h4>{% translate "Discover More on Latest Bit-coin" %}</h4>
               </div>
             </div>
             <div class="col-lg-6 col-sm-6">
@@ -164,7 +164,7 @@
                 <div class="icon">
                   <img src="{% static './assets/images/services-02.jpg' %}" alt="data analysis" class="templatemo-feature">
                 </div>
-                <h4>Gray hat whistler, Bug&Flaws hunter</h4>
+                <h4>{% translate "Gray hat whistler, Bug&Flaws hunter" %}</h4>
               </div>
             </div>
             <div class="col-lg-6 col-sm-6">
@@ -172,7 +172,7 @@
                 <div class="icon">
                   <img src="{% static './assets/images/services-03.jpg' %}" alt="precise data" class="templatemo-feature">
                 </div>
-                <h4>Data Analysis &amp; Prediction</h4>
+                <h4>{% translate "Data Analysis" %} &amp; {% translate "Prediction" %}</h4>
               </div>
             </div>
             <div class="col-lg-6 col-sm-6">
@@ -180,7 +180,7 @@
                 <div class="icon">
                   <img src="{% static './assets/images/services-04.jpg' %}" alt="SEO marketing" class="templatemo-feature">
                 </div>
-                <h4>Real-Time Big Data Processing</h4>
+                <h4>{% translate "Real-Time Big Data Processing" %}</h4>
               </div>
             </div>
           </div>
@@ -194,9 +194,10 @@
       <div class="row">
         <div class="col-lg-6">
           <div class="section-heading">
-            <h2>Check <em>Comments</em> from <span>Travelers</span></h2>
+            <h2>{% translate "Check" %} <em>{% translate "Comments" %}</em> {% translate "from" %} <span>
+              {% translate "Travelers" %}</span></h2>
             <div class="line-dec"></div>
-            <p>They may tell about my bad or good, but only yours matter</p>
+            <p>{% translate "They may tell about my bad or good, but only yours matter" %}</p>
           </div>
         </div>
       </div> 
@@ -212,9 +213,8 @@
                   <!-- <h4>Digital Agency HTML Templates</h4> -->
                   <h4>
                     {{ surf.owner }}: {{ surf.subject }}
-                    <a href="#star-rating">{{ surf.rating }}<i class="fa fa-star checked"></i></a>
+                    <a target="_blank" href="mailto:{{surf.owner.email}}">{{ surf.rating }}<i class="fa fa-star checked"></i></a>
                   </h4>
-
                   <p>{{ surf.mess }}</p>
                 </div>
               </div>
@@ -223,35 +223,35 @@
               <img src="{% static './assets/images/projects-02.jpg' %}" alt="">
               <div class="down-content">
                 <h4>Admin Dashboard CSS Templates</h4>
-                <a href="#"><i class="fa fa-link"></i></a>
+                <a target="_blank" href="#"><i class="fa fa-link"></i></a>
               </div>
             </div>
             <div class="item">
               <img src="{% static './assets/images/projects-03.jpg' %}" alt="">
               <div class="down-content">
                 <h4>Best Responsive Website Layouts</h4>
-                <a href="#"><i class="fa fa-link"></i></a>
+                <a target="_blank" href="#"><i class="fa fa-link"></i></a>
               </div>
             </div>
             <div class="item">
               <img src="{% static './assets/images/projects-04.jpg' %}" alt="">
               <div class="down-content">
                 <h4>HTML CSS Layouts for your websites</h4>
-                <a href="#"><i class="fa fa-link"></i></a>
+                <a target="_blank" href="#"><i class="fa fa-link"></i></a>
               </div>
             </div>
             <div class="item">
               <img src="{% static './assets/images/projects-02.jpg' %}" alt="">
               <div class="down-content">
                 <h4>Bootstrap 5 Themes for Free</h4>
-                <a href="#"><i class="fa fa-link"></i></a>
+                <a target="_blank" href="#"><i class="fa fa-link"></i></a>
               </div>
             </div>
             <div class="item">
               <img src="{% static './assets/images/projects-03.jpg' %}" alt="">
               <div class="down-content">
                 <h4>Mobile Friendly Website Layouts</h4>
-                <a href="#"><i class="fa fa-link"></i></a>
+                <a target="_blank" href="#"><i class="fa fa-link"></i></a>
               </div>
             </div> -->
           </div>
@@ -273,14 +273,11 @@
               </div>
               <div class="col-lg-6">
                 <div class="section-heading">
-                  <h2>More <em>About Me</em> &amp; my <span>Project achievements</span></h2>
+                  <h2>{% translate "More" %} <em>{% translate "About Me" %}</em> &amp; {% translate "my" %} <span>
+                    {% translate "Project achievements" %}</span>
+                  </h2>
                   <div class="line-dec"></div>
-                  <!-- You are free to use this template for any purpose.
-                    You are not allowed to redistribute the downloadable ZIP file of Tale SEO Template on any other template website.
-                    Please contact us. Thank you.
-                  -->
-                  <p>Here, You can check all my expertize in technology for web development and I could appreciate you leave a comment and rate
-                    about the quality of my portfolio webpage with the help of TemplateMo in design side.
+                  <p>{% translate "Here, You can check all my expertize in technology for web development and I could appreciate you leave a comment and rate about the quality of my portfolio webpage with the help of TemplateMo in design side." %}
                   </p>
                 </div>
                 <div class="skills">
@@ -304,8 +301,7 @@
                   Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed doers eiusmod tempor incididunt ut
                    labore et dolore dolor dolor sit amet, consectetur adipiscing elit, sed doers eiusmod.</p
                 -->
-                <p class="more-info">As you can see, I am a fullstack web coder available for freelance and Bug-Hunting (white hat)
-                  if you contact me through the mail I gave you upward. Thank you.</p>
+                <p class="more-info">{% translate "As you can see, I am a fullstack web coder available for freelance and Bug-Hunting (white hat) if you contact me through the mail I gave you upward. Thank you." %}</p>
               </div>
             </div>
           </div>
@@ -332,22 +328,23 @@
                   <div class="row">
                     <div class="col-lg-12">
                       <div class="section-heading">
-                        <h2><em>Contact Us</em> &amp; Get In <span>Touch</span></h2>
+                        <h2><em>{% translate "Contact Us" %}</em> &amp; {% translate "Get In" %} <span>{% translate "Touch" %}</span></h2>
                       </div>
                     </div>
                     <div class="col-lg-6">
                       <fieldset>
-                        <input type="name" name="name" id="name" placeholder="Your Name..." autocomplete="on" required>
+                        <input type="name" name="name" id="name" placeholder="{% translate 'Your Name...' %}" autocomplete="on" required>
                       </fieldset>
                     </div>
                     <div class="col-lg-6">
                       <fieldset>
-                        <input type="subject" name="subject" id="subject" placeholder="Subject..." autocomplete="on" >
+                        <input type="subject" name="subject" id="subject" placeholder="{% translate 'Subject...' %}" autocomplete="on" >
                       </fieldset>
                     </div>
                     <div class="col-lg-6">
                       <fieldset> 
-                        <input type="email" name="email" id="email" pattern="[^ @]*@[^ @]*" placeholder="Your E-mail..." required="">
+                        <input type="email" name="email" id="email" pattern="[^ @]*@[^ @]*" 
+                          placeholder="{% translate 'Your E-mail...' %}"required="">
                       </fieldset>
                     </div>
                     <div class="col-lg-6">
@@ -364,18 +361,18 @@
                     </div>
                     <div class="col-lg-12">
                       <fieldset>
-                        <textarea name="message" id="message" placeholder="Your Message"></textarea>
+                        <textarea name="message" id="message" placeholder="{% translate 'Your Message' %}"></textarea>
                       </fieldset>
                     </div>
                     <div class="col-lg-12">
                       <fieldset>
-                        <button type="submit" id="form-submit" class="orange-button">Send Message Now</button>
+                        <button type="submit" id="form-submit" class="orange-button">{% translate "Send Message Now" %}</button>
                       </fieldset>
                     </div>
                     <div class="col-lg-12">
                       <fieldset> 
                         <!-- async(key) => if (key.value.length === key[0]) form.send(key.value); -->
-                        <input type="text" name="key" placeholder="Put the mail confirm" id="key">
+                        <input type="text" name="key" placeholder="{% translate 'Put the mail confirm' %}" id="key">
                       </fieldset>
                     </div>
                   </div>
@@ -385,21 +382,21 @@
                     <div class="col-lg-4">
                       <div class="info-item">
                         <i class="fa fa-phone"></i>
-                        <h4><a href="tel:+261 032 49 440 18">+261 032 49 440 18</a></h4>
+                        <h4><a target="_blank" href="tel:+261 032 49 440 18">+261 032 49 440 18</a></h4>
                       </div>
                     </div>
                     <div class="col-lg-4">
                       <div class="info-item">
                         <i class="fa fa-envelope"></i>
-                        <!-- <h4><a href="mailto:ranjalahyandrytahianasylvain@gmail.com">info@company.com</a></h4> -->
-                        <h4><a href="mailto:ranjalahyandrytahianasylvain@gmail.com">info@company.com</a></h4>
+                        <!-- <h4><a target="_blank" href="mailto:ranjalahyandrytahianasylvain@gmail.com">info@company.com</a></h4> -->
+                        <h4><a target="_blank" href="mailto:ranjalahyandrytahianasylvain@gmail.com">info@company.com</a></h4>
                       </div>
                     </div>
                     <div class="col-lg-4">
                       <div class="info-item">
                         <i class="fa fa-map-marker"></i>
-                        <!-- <a href="#">Sunny Isles Beach, FL 33160, United States</a> -->
-                        <h4><a href="https://map.google.com/?Alasora Tana-III" target="_blank" rel="noopener noreferrer">Madagascar Island</a></h4>
+                        <!-- <a target="_blank" href="#">Sunny Isles Beach, FL 33160, United States</a> -->
+                        <h4><a target="_blank" href="https://map.google.com/?Alasora Tana-III" target="_blank" rel="noopener noreferrer">Madagascar Island</a></h4>
                       </div>
                     </div>
                   </div>
@@ -415,9 +412,9 @@
   <footer>
     <div class="container">
       <div class="col-lg-12">
-        <p>Copyright © 2036 <a href="https://pythonanywhere.com/">Python AnyWhere Hoster</a>. All rights reserved. 
+        <p>Copyright © 2036 <a target="_blank" href="https://pythonanywhere.com/">Python AnyWhere Hoster</a>. All rights reserved. 
         
-        <br>Design: <a href="https://templatemo.com" target="_blank">TemplateMo</a></p>
+        <br>Design: <a target="_blank" href="https://templatemo.com" target="_blank">TemplateMo</a></p>
       </div>
     </div>
   </footer>
@@ -432,30 +429,6 @@
   <script src="{% static './assets/js/tabs.js' %}"></script>
   <script src="{% static './assets/js/popup.js' %}"></script>
   <script src="{% static './assets/js/custom.js' %}"></script>
-  <script>
-    function updateRating() {
-      var ratingInput = document.getElementById("ratingInput");
-      var currentRating = document.getElementById("currentRating");
-      currentRating.value = ratingInput.value;
-    }
-    
-    document.addEventListener("DOMContentLoaded", function () {
-      const stars = document.querySelectorAll("#star-rating i");
-      const ratingInput = document.getElementById("ratingInput");
-  
-      stars.forEach((star) => {
-          star.addEventListener("click", function () {
-              const rating = this.getAttribute("data-rating");
-              ratingInput.value = rating;
-
-              // Add the "checked" class to stars up to the selected rating
-              for (let i = 0; i < rating; i++) {
-                  stars[i].classList.add("checked");
-              }
-          });
-      });
-    });  
-  </script>
   
 
   </body>

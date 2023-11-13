@@ -2,8 +2,8 @@ from django.shortcuts import render,Http404, HttpResponse
 from .models import Surf, Mega
 import os
 from django.conf import settings
-from django.contrib.auth.models import User
 from asgiref.sync import sync_to_async
+from django.contrib.auth.models import User
 
 
 @sync_to_async
@@ -24,7 +24,7 @@ def landing(request):
         )
         
         print('You have 6-hours to put the right key, be careful !')
-        key: str = "9"  ## available only for 6hours
+        key: str = ""  ## available only for 6 hours
         if "input_key" == str(input("insert your key")):
             new.save()
         else:
@@ -47,9 +47,6 @@ def download(request, path):
             return response
     raise Http404
 
-
-def faqs(request):
-    return render(request, './mainapp/faqs.html', status=200)
 
 
 """ from django.shortcuts import render, redirect
