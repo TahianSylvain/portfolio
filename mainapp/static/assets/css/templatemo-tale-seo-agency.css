@@ -1061,12 +1061,13 @@ Infos Style
 
 .infos .main-content {
   overflow: hidden;
+  margin-top: 35px;
   background-color: #fff;
   border-radius: 23px;
 }
 
 .infos .main-content .left-image {
-  background-image: url(../images/left-infos.jpg);
+  /* background-image: url(../images/Lvlind.png); */
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center center;
@@ -1074,9 +1075,10 @@ Infos Style
   height: 100%;
 }
 
+/* 
 .infos .main-content .left-image img {
   display: none;
-}
+} */
 
 .infos .main-content .section-heading {
   padding: 60px 60px 30px 60px;
