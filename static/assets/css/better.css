@@ -1,0 +1,115 @@
+.pre-header{
+    padding:0px;
+}
+
+.main-banner{
+    padding-bottom: 0px;
+    padding-top: 125px;
+}
+
+.main-banner p{
+    padding-right: 0px;
+}
+
+._tete_{
+    height: 90px;
+}
+
+#logo-icons8{
+    margin-top: 12px;
+}
+
+.header-area .main-nav .logo {
+    margin-top: 12px;
+}
+
+.header-area {
+    height: 90px;
+    top: 68px;
+}
+
+#_tete_ > div:nth-child(1) {
+    margin-top: 0px;
+}
+
+.header-area .main-nav .nav li.has-sub::after {
+    display:none;
+}
+.section{
+    margin: 0%;
+    padding-top: 0px;
+}
+
+.container {
+    margin-top: 15px;
+}
+
+#projects {
+    padding-top: 30px;
+}
+
+#consis {
+    height: 150px;
+}
+
+#voilà {
+    margin-bottom: 75px;
+}
+
+.main-banner .line-dec{
+    background: rgb(85,0,227);
+    background: linear-gradient(90deg, rgba(85,0,227,1) 0%, rgba(198,61,255,1) 100%);
+}
+#imagine{
+    width: 1030px;
+    overflow: hidden;
+    margin-right: 20px; /* Adjust the margin to control the distance between the image and text */
+    margin-bottom: 30px;
+    border-radius: 50%;
+}
+
+.services .service-item {
+    border: 1px solid #541c6c;
+    background-color: #ab75d3;
+}
+
+
+.service .service-item h4 {
+    color: #541c6c;
+}
+
+p {
+    font-family: initial;
+    color: #4c2877;
+}
+.section-heading .line-dec {
+    width: 380px;
+}
+#ratingInput{
+    display: none;
+}
+
+.cellular{
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+}
+
+
+#star-rating {
+    font-size: 24px;
+    cursor: pointer;
+}
+
+#star-rating i {
+    color: #ccc;
+    transition: color 0.3s;
+}
+
+#star-rating i.checked {
+    color: rgb(116, 1, 169); 
+  }
+
+#submit-rating {
+    margin-top: 10px;
+}
