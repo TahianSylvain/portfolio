@@ -3,6 +3,7 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="Ranjalahy Andry Tahiana Sylvain's PortFolio">
 
     <link rel="stylesheet"
       target="_blank" href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;600;700;800&display=swap">
@@ -25,13 +26,14 @@
     <link rel="stylesheet" target="_blank" href="{% static './assets/css/mobile.css' %}">
     <!--
     
-      TemplateMo 582 Tale SEO Agency
+      mtp:/Honor%207C/M%C3%A9moire%20de%20stockage%20interne/snaptube/download/SnapTube%20Audio/Elton%20John_%20Dua%20Lipa%20-%20Cold%20Heart%20(PNAU%20Remix)%20(Official%20Video)(MP3_160K).mp3TemplateMo 582 Tale SEO Agency
       https://templatemo.com/tm-582-tale-seo-agency
 
     -->
   </head>
 <body>
   <div id="js-preloader" class="js-preloader">
+    <audio autoplay src="{% static './assets/song/Elton John_ Britney Spears - Hold Me Closer (Lyric Video)(M4A_128K).m4a' %}"></audio>
     <div class="preloader-inner">
       <span class="dot"></span>
       <div class="dots">
@@ -208,8 +210,6 @@
             {% for surf in surfs %}
               <div class="item">
                 <div class="down-content">
-                  <!-- <img src="{% static './assets/images/projects-02.jpg' %}" alt=""> -->
-                  <!-- <h4>Digital Agency HTML Templates</h4> -->
                   <h4>
                     {{ surf.owner }}: {{ surf.subject }}
                     <a target="_blank" href="mailto:{{surf.owner.email}}">{{ surf.rating }}<i class="fa fa-star checked"></i></a>
@@ -218,41 +218,6 @@
                 </div>
               </div>
             {% endfor %}
-            <!-- <div class="item">
-              <img src="{% static './assets/images/projects-02.jpg' %}" alt="">
-              <div class="down-content">
-                <h4>Admin Dashboard CSS Templates</h4>
-                <a target="_blank" href="#"><i class="fa fa-link"></i></a>
-              </div>
-            </div>
-            <div class="item">
-              <img src="{% static './assets/images/projects-03.jpg' %}" alt="">
-              <div class="down-content">
-                <h4>Best Responsive Website Layouts</h4>
-                <a target="_blank" href="#"><i class="fa fa-link"></i></a>
-              </div>
-            </div>
-            <div class="item">
-              <img src="{% static './assets/images/projects-04.jpg' %}" alt="">
-              <div class="down-content">
-                <h4>HTML CSS Layouts for your websites</h4>
-                <a target="_blank" href="#"><i class="fa fa-link"></i></a>
-              </div>
-            </div>
-            <div class="item">
-              <img src="{% static './assets/images/projects-02.jpg' %}" alt="">
-              <div class="down-content">
-                <h4>Bootstrap 5 Themes for Free</h4>
-                <a target="_blank" href="#"><i class="fa fa-link"></i></a>
-              </div>
-            </div>
-            <div class="item">
-              <img src="{% static './assets/images/projects-03.jpg' %}" alt="">
-              <div class="down-content">
-                <h4>Mobile Friendly Website Layouts</h4>
-                <a target="_blank" href="#"><i class="fa fa-link"></i></a>
-              </div>
-            </div> -->
           </div>
         </div>
       </div>
