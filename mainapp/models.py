@@ -11,6 +11,7 @@ class Surf(models.Model):
         on_delete=models.CASCADE)
     subject = models.CharField(max_length=12)
     mess = models.TextField()
+    day = models.DateField(auto_now_add=True, blank=True, null=True)
     rating = models.PositiveSmallIntegerField(default=3)
     objects = models.Manager()
 

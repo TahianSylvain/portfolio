@@ -1,6 +1,6 @@
 from django.shortcuts import render,Http404, HttpResponse
 from .models import Surf, Mega
-import os, random
+import os, random, datetime
 from django.conf import settings
 from asgiref.sync import sync_to_async
 from django.contrib.auth.models import User
@@ -23,9 +23,8 @@ def landing(request):
             rating = request.POST['ratingInput']
         )
                 
-        key = [random.randint(0, 9) for i in range(1, 10)]
-        mail_subject = "Hi! Mail confirmation sent from Tahiana"
-        message = f"""If you are new to our platform, please hit that key: {str(k for k in key)}"""
+        mail_subject = f"Hi! Mail Contacting sent from my PORTFOLIO {str(date.datetime.now())}"
+        message = f"""If you were leaving comment for my platform, wish you found what you excepted"""
         to_email = new_owner.email
         
         send_mail(
@@ -36,14 +35,6 @@ def landing(request):
             fail_silently=False
         )
         print('Smtp Made')
-        
-        print('You have 6-hours to put the right key, be careful !')
-        if key == str(request.POST['key']):
-            new.save()
-        else:
-            new_owner.delete()
-            print("Retry latter (30min)")
-            
     return render(  request = request,
                     template_name = './mainapp/index.html', 
                     context = {"surfs": surfs, 'file': file},

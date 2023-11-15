@@ -14,6 +14,7 @@
 		}, 3000)
     });
 
+
 	// Donation for Mvola
 	var phoneNumberElement = $("li a[href='tel:+2610324944018']");
 
@@ -24,11 +25,6 @@
 		phoneNumberElement.attr("href", "tel:+2610384991430");
 		phoneNumberElement.html(`<i class="fa fa-phone"></i>+261 038 49 914 30`)
 
-		// Animate the border of the phone number element back to its original state
-		// phoneNumberElement.css("border-color", "black").animate({
-		// 	borderWidth: "3px",
-		// 	borderColor: "rgba(198,61,255,1)"
-		//   }, 1200);
 	} else {
 		// Otherwise, change the phone number to +261 032 494 401 8
 		phoneNumberElement.attr("href", "tel:+2610324944018");
@@ -47,31 +43,6 @@
 	$(window).on("unload", function() {
 	clearInterval(interval);
 	});
-
-
-	//input-rating
-	function updateRating() {
-		var ratingInput = document.getElementById("ratingInput");
-		var currentRating = document.getElementById("currentRating");
-		currentRating.value = ratingInput.value;
-	  }
-	  
-	  document.addEventListener("DOMContentLoaded", function () {
-		const stars = document.querySelectorAll("#star-rating i");
-		const ratingInput = document.getElementById("ratingInput");
-	
-		stars.forEach((star) => {
-			star.addEventListener("click", function () {
-				const rating = this.getAttribute("data-rating");
-				ratingInput.value = rating;
-  
-				// Add the "checked" class to stars up to the selected rating
-				for (let i = 0; i < rating; i++) {
-					stars[i].classList.add("checked");
-				}
-			});
-		});
-	  });  
 
 
 	// WOW JS
