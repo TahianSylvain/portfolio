@@ -124,9 +124,12 @@ p {
     owl-carousel.owl-loaded {
         height: 750px;
     }
+    .presented {
+        font-size: revert;
+    }
 }
 @media (min-width: 1200px){
-    .h2, h2 {
+    .presented {
         font-size: revert;
     }
 }
