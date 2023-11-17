@@ -113,3 +113,23 @@ p {
 #submit-rating {
     margin-top: 10px;
 }
+@media (max-width: 992px){
+    .header-area {
+        height: 90px;
+        top: 0px;
+    }
+    #voilà{
+        margin: 120px 0px;
+    }
+    owl-carousel.owl-loaded {
+        height: 750px;
+    }
+    .presented {
+        font-size: large;
+    }
+}
+@media (min-width: 1200px){
+    .presented {
+        font-size: revert;
+    }
+}
