@@ -125,7 +125,7 @@ p {
         height: 750px;
     }
     .presented {
-        font-size: revert;
+        font-size: large;
     }
 }
 @media (min-width: 1200px){
