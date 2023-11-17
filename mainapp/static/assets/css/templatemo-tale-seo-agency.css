@@ -1880,6 +1880,9 @@ body {
     right: auto;
     left: 50%;
     transform: translate(-23px, -23px);
+    margin-top: 95px;
+    margin-left: 55px;
+    opacity: 65%;
   }
 }
 
