@@ -6,6 +6,9 @@ from asgiref.sync import sync_to_async
 from django.contrib.auth.models import User
 from django.core.mail import send_mail
 
+def bpmn_modeler(request):
+    return render(request, 'index.html')
+
 @sync_to_async
 def landing(request):
     file = Mega.objects.all()
